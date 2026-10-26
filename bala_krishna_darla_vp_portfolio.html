@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Bala Krishna Darla — Vice President of Engineering, global technology and Salesforce transformation leader." />
+  <title>Bala Krishna Darla | VP of Engineering</title>
+  <style>
+    :root {
+      --bg: #080b12; --panel: #101622; --panel2: #151d2b; --text: #f4f7fb;
+      --muted: #a6b1c3; --line: rgba(255,255,255,.12); --accent: #8caeff;
+      --accent2: #c3d3ff; --max: 1160px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: radial-gradient(ellipse at 80% 0%, #17233c 0, transparent 36%), var(--bg); color: var(--text); line-height: 1.6; }
+    a { color: inherit; text-decoration: none; }
+    .wrap { width: min(var(--max), calc(100% - 40px)); margin: 0 auto; }
+    nav { position: sticky; top: 0; z-index: 10; backdrop-filter: blur(18px); background: rgba(8,11,18,.78); border-bottom: 1px solid var(--line); }
+    .navin { display:flex; align-items:center; justify-content:space-between; min-height:74px; gap:24px; }
+    .brand { font-size: 14px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+    .brand span { color: var(--accent); }
+    .navlinks { display:flex; gap:24px; color:var(--muted); font-size:13px; }
+    .navlinks a:hover { color:var(--text); }
+    .hero { padding: 105px 0 78px; display:grid; grid-template-columns: 1.4fr .6fr; align-items:center; gap:56px; }
+    .eyebrow { display:inline-flex; gap:10px; align-items:center; color:var(--accent2); font-size:12px; font-weight:800; letter-spacing:.17em; text-transform:uppercase; }
+    .dot { width:7px; height:7px; border-radius:50%; background:#8caeff; box-shadow:0 0 16px #8caeff; }
+    h1 { font-size:clamp(42px, 6vw, 76px); letter-spacing:-.055em; line-height:1.04; margin:22px 0; max-width:800px; }
+    h1 em { color:var(--accent); font-style:normal; }
+    .intro { font-size:18px; color:#c1cad8; max-width:720px; }
+    .actions { display:flex; flex-wrap:wrap; gap:12px; margin-top:30px; }
+    .btn { display:inline-flex; align-items:center; justify-content:center; padding:12px 18px; border-radius:8px; border:1px solid var(--line); font-size:13px; font-weight:750; transition:.2s; }
+    .btn.primary { background:var(--accent); color:#07101f; border-color:var(--accent); }
+    .btn:hover { transform:translateY(-2px); }
+    .profile-card { border:1px solid var(--line); background:linear-gradient(155deg, rgba(24,34,53,.95), rgba(12,17,27,.94)); border-radius:18px; padding:28px; box-shadow:0 24px 90px rgba(0,0,0,.24); }
+    .monogram { display:grid; place-items:center; width:72px; height:72px; border-radius:18px; background:linear-gradient(145deg,#dce6ff,#6f91d8); color:#0b1220; font-size:24px; font-weight:900; margin-bottom:22px; }
+    .profile-card h2 { margin:0 0 6px; font-size:20px; }
+    .profile-card p { margin:0; color:var(--muted); font-size:13px; }
+    .cardline { height:1px; background:var(--line); margin:22px 0; }
+    .mini-label { color:var(--muted); text-transform:uppercase; letter-spacing:.13em; font-size:10px; font-weight:800; }
+    .focus { display:flex; flex-wrap:wrap; gap:8px; margin-top:12px; }
+    .tag { border:1px solid var(--line); border-radius:6px; padding:6px 9px; color:#d4dced; font-size:11px; }
+    section { padding:76px 0; border-top:1px solid var(--line); }
+    .section-head { display:flex; align-items:end; justify-content:space-between; gap:24px; margin-bottom:30px; }
+    .kicker { color:var(--accent); text-transform:uppercase; font-size:11px; font-weight:850; letter-spacing:.18em; }
+    h2.section-title { font-size:clamp(28px,4vw,42px); letter-spacing:-.04em; line-height:1.15; margin:8px 0 0; }
+    .section-copy { color:var(--muted); max-width:560px; font-size:14px; }
+    .stats { display:grid; grid-template-columns:repeat(4,1fr); gap:14px; }
+    .stat, .tile { background:rgba(16,22,34,.78); border:1px solid var(--line); border-radius:12px; padding:22px; }
+    .stat strong { display:block; font-size:clamp(25px,3vw,38px); letter-spacing:-.04em; line-height:1.2; }
+    .stat span { display:block; color:var(--muted); font-size:12px; margin-top:8px; }
+    .grid3 { display:grid; grid-template-columns:repeat(3,1fr); gap:14px; }
+    .tile .num { color:var(--accent); font-size:11px; font-weight:800; letter-spacing:.1em; }
+    .tile h3 { font-size:18px; margin:13px 0 8px; }
+    .tile p { color:var(--muted); font-size:13px; margin:0; }
+    .split { display:grid; grid-template-columns: .8fr 1.2fr; gap:46px; }
+    .principles { display:grid; gap:12px; }
+    .principle { display:flex; gap:15px; padding:17px 0; border-bottom:1px solid var(--line); }
+    .principle .symbol { color:var(--accent); font-size:18px; font-weight:900; width:24px; }
+    .principle h3 { margin:0 0 4px; font-size:15px; }
+    .principle p { margin:0; color:var(--muted); font-size:13px; }
+    .capabilities { display:flex; flex-wrap:wrap; gap:10px; }
+    .capabilities span { padding:10px 13px; background:var(--panel); border:1px solid var(--line); border-radius:7px; color:#dce5f5; font-size:12px; }
+    .timeline { display:grid; grid-template-columns:140px 1fr; gap:22px; padding:22px 0; border-bottom:1px solid var(--line); }
+    .timeline .date { color:var(--accent); font-size:12px; font-weight:800; }
+    .timeline h3 { margin:0 0 5px; font-size:17px; }
+    .timeline p { margin:0; color:var(--muted); font-size:13px; }
+    .contact { display:flex; justify-content:space-between; align-items:center; gap:30px; background:linear-gradient(120deg,#16223a,#101622); border:1px solid var(--line); border-radius:16px; padding:34px; }
+    .contact h2 { font-size:clamp(25px,4vw,40px); line-height:1.1; letter-spacing:-.04em; margin:0 0 10px; }
+    .contact p { margin:0; color:var(--muted); max-width:580px; font-size:14px; }
+    footer { padding:26px 0 36px; color:var(--muted); font-size:11px; display:flex; justify-content:space-between; gap:20px; }
+    @media(max-width:800px) { .hero,.split { grid-template-columns:1fr; } .hero { padding-top:70px; gap:32px; } .stats { grid-template-columns:repeat(2,1fr); } .grid3 { grid-template-columns:1fr; } .section-head,.contact { align-items:flex-start; flex-direction:column; } .navlinks { gap:12px; } .navlinks a:nth-child(2),.navlinks a:nth-child(3) { display:none; } .timeline { grid-template-columns:1fr; gap:6px; } }
+    @media(max-width:430px) { .wrap { width:calc(100% - 28px); } .stats { gap:8px; } .stat { padding:15px; } .navlinks { font-size:11px; } }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="wrap navin">
+      <a class="brand" href="#home">BKD<span>.</span></a>
+      <div class="navlinks">
+        <a href="#leadership">Leadership</a><a href="#expertise">Expertise</a><a href="#journey">Journey</a><a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <main id="home" class="wrap">
+    <header class="hero">
+      <div>
+        <div class="eyebrow"><span class="dot"></span> Technology • Strategy • Transformation</div>
+        <h1>Engineering the next chapter of <em>enterprise technology.</em></h1>
+        <p class="intro">Bala Krishna Darla — Vice President of Engineering and technology leader focused on global transformation, platform strategy, AI-enabled innovation, and high-performing engineering organizations.</p>
+        <div class="actions">
+          <a class="btn primary" href="#leadership">Explore leadership profile ↘</a>
+          <a class="btn" href="#contact">Connect professionally</a>
+        </div>
+      </div>
+      <aside class="profile-card">
+        <div class="monogram">BKD</div>
+        <h2>Bala Krishna Darla</h2>
+        <p>Vice President of Engineering</p>
+        <div class="cardline"></div>
+        <div class="mini-label">Leadership focus</div>
+        <div class="focus"><span class="tag">Global Engineering</span><span class="tag">P&L & Growth</span><span class="tag">AI / GenAI</span><span class="tag">Enterprise Platforms</span><span class="tag">Executive Delivery</span></div>
+      </aside>
+    </header>
+
+    <section id="leadership">
+      <div class="section-head">
+        <div><div class="kicker">Executive snapshot</div><h2 class="section-title">Strategy with delivery accountability.</h2></div>
+        <p class="section-copy">Bringing business priorities, architecture, talent, and execution together to create measurable enterprise outcomes.</p>
+      </div>
+      <div class="stats">
+        <div class="stat"><strong>14.7+</strong><span>Years of professional experience*</span></div>
+        <div class="stat"><strong>$35M+</strong><span>Transformation programs*</span></div>
+        <div class="stat"><strong>400+</strong><span>Engineering organization scale*</span></div>
+        <div class="stat"><strong>17X</strong><span>Salesforce certifications*</span></div>
+      </div>
+      <p style="color:var(--muted);font-size:11px;margin-top:14px">*Profile metrics supplied for this draft. Confirm scope, definitions, and current figures before publishing.</p>
+    </section>
+
+    <section>
+      <div class="section-head">
+        <div><div class="kicker">Leadership agenda</div><h2 class="section-title">Build. Transform. Scale.</h2></div>
+        <p class="section-copy">A senior leadership lens that connects technology decisions to business value, customer outcomes, and sustainable growth.</p>
+      </div>
+      <div class="grid3">
+        <article class="tile"><div class="num">01 / STRATEGY</div><h3>Enterprise technology strategy</h3><p>Shape platform roadmaps, modernization priorities, operating models, and investment decisions aligned to business strategy.</p></article>
+        <article class="tile"><div class="num">02 / GROWTH</div><h3>Business & portfolio leadership</h3><p>Support account growth, executive relationships, P&L outcomes, go-to-market strategy, proposals, and solution positioning.</p></article>
+        <article class="tile"><div class="num">03 / EXECUTION</div><h3>Global engineering excellence</h3><p>Build accountable teams, strengthen delivery governance, manage complex programs, and develop future-ready leaders.</p></article>
+      </div>
+    </section>
+
+    <section id="expertise">
+      <div class="split">
+        <div><div class="kicker">Technology landscape</div><h2 class="section-title">Deep platforms.<br/>Broad perspective.</h2><p class="section-copy">Enterprise-grade solutions across customer experience, cloud ecosystems, integration, data, and emerging AI capabilities.</p></div>
+        <div>
+          <div class="capabilities">
+            <span>Salesforce Ecosystem</span><span>Service Cloud</span><span>Financial Services Cloud</span><span>Health Cloud</span><span>Revenue Cloud & CPQ</span><span>Salesforce Field Service</span><span>Agentforce & GenAI</span><span>Enterprise Architecture</span><span>MuleSoft & Integration</span><span>API Strategy</span><span>Cloud Modernization</span><span>Digital Transformation</span><span>Solution Engineering</span><span>RFP / RFI / GTM</span><span>Talent & Capability Building</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head"><div><div class="kicker">Operating principles</div><h2 class="section-title">How I lead.</h2></div></div>
+      <div class="grid3">
+        <article class="tile"><div class="num">01</div><h3>Business outcomes first</h3><p>Connect technology investments to customer value, growth, quality, and measurable results.</p></article>
+        <article class="tile"><div class="num">02</div><h3>People multiply impact</h3><p>Develop leaders, create clarity, and build inclusive teams that can deliver at scale.</p></article>
+        <article class="tile"><div class="num">03</div><h3>Innovation with governance</h3><p>Adopt AI and modern platforms with responsible design, security, architecture, and operational discipline.</p></article>
+      </div>
+    </section>
+
+    <section id="journey">
+      <div class="section-head"><div><div class="kicker">Career journey</div><h2 class="section-title">Leadership built through execution.</h2></div></div>
+      <div class="timeline">
+        <div class="date">DEC 2021 — PRESENT</div>
+        <div><h3>Wipro · Vice President of Engineering</h3><p>Enterprise technology leadership, transformation delivery, engineering scale, solution strategy, and business growth. Add approved business-unit, client, and portfolio specifics here.</p></div>
+      </div>
+      <div class="timeline">
+        <div class="date">2012 — 2021</div>
+        <div><h3>Capgemini · Technology & Salesforce Leadership</h3><p>Progressive roles across enterprise delivery, Salesforce platforms, architecture, and transformation programs. Replace this summary with exact titles and dates from the final CV.</p></div>
+      </div>
+    </section>
+
+    <section>
+      <div class="contact" id="contact">
+        <div><h2>Let’s talk about what’s next.</h2><p>Open to meaningful conversations on executive technology leadership, enterprise transformation, platform strategy, and AI-enabled business innovation.</p></div>
+        <div class="actions" style="margin-top:0">
+          <a class="btn primary" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">Connect on LinkedIn ↗</a>
+          <a class="btn" href="#home">Back to top ↑</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="wrap"><span>© <span id="year">2026</span> Bala Krishna Darla</span><span>Executive portfolio · Built for clarity, credibility, and impact</span></footer>
+</body>
+</html>
